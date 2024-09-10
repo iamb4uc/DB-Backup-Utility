@@ -1,0 +1,6 @@
+mysql-connector-python
+psycopg2-binary
+cx_Oracle
+boto3
+pyyaml
+rich
