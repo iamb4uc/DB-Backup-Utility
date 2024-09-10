@@ -1,30 +1,31 @@
 FILE STRUCTURE
 
 DB Backup Utility/
+│
 ├── backup_tool/
 │   ├── __init__.py
 │   ├── main.py
+│   ├── config.py
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   ├── connectors/
 │   │   │   ├── __init__.py
 │   │   │   ├── mysql.py
 │   │   │   ├── postgresql.py
-│   │   │   ├── mongodb.py
-│   │   │   ├── sqlite.py
-│   │   └── compression.py
-│   │   └── cloud_storage.py
+│   │   │   └── oracle.py
+│   │   ├── compression.py
+│   │   ├── cloud_storage.py
+│   │   └── logging_config.py
 │   ├── backup/
 │   │   ├── __init__.py
 │   │   ├── full_backup.py
 │   │   ├── incremental_backup.py
-│   │   ├── differential_backup.py
+│   │   └── differential_backup.py
 │   └── restore/
 │       ├── __init__.py
-│       ├── restore.py
+│       └── restore.py
 ├── requirements.txt
 ├── README.md
 ├── config.yaml
 └── logs/
     └── backup.log
-
